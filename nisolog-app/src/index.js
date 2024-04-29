@@ -4,6 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+const express = require('express')
+const app = express()
+const port = process.env.PORT || 4000;
+
+
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
